@@ -66,11 +66,11 @@ if (fråga11 == "canberra"){
  if (correct <= 3) {
  	rackvidd = 2;
  }
- if (correct > 3 && correct <8)
+ if (correct > 3 && correct <9)
  {
  	rackvidd = 1;
  }
- if (correct >= 8) {
+ if (correct >= 9) {
  	rackvidd = 0;
  }
 
