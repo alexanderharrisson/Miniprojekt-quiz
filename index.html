@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,64 +7,76 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="javascript.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body>
 
-<h1>Ett bra geografiquiz</h1>
+<body>
+<div class="container">
+<h2>Geografi quiz</h2>
 
 <form id="quiz" name="quiz">
 
-<p class="fraga">Vad heter huvudstaden i Spanien ?</p>
-<input id="mc" type="radio" name="fråga1" value="madrid" >Madrid<br>
-<input id="mc" type="radio" name="fråga1" value="stockholm" >Stockholm<br>
 
-
-<p class="fraga">Vad heter huvudstaden i Frankrike ?</p>
-<input id="mc" type="radio" name="fråga2" value="paris">Paris<br>
-<input id="mc" type="radio" name="fråga2" value="lyon" >Lyon<br>
-
+<p class="fraga1">Vad heter huvudstaden i Spanien ?</p>
+<div class="fraga">
+<input id="mc" type="radio" name="fråga1" value="madrid">Madrid<br>
+<input id="mc" type="radio" name="fråga1" value="bilbao" >Bilbao<br>
 
 <p class="fraga">Vad heter huvudstaden i Tyskland ?</p>
-<input id="mc" type="radio" name="fråga3" value="berlin" >Berlin<br>
-<input id="mc" type="radio" name="fråga3" value="Hamburg" >Hamburg<br>
+<input id="mc" type="radio" name="fråga2" value="munchen">Munchen<br>
+<input id="mc" type="radio" name="fråga2" value="berlin" >Berlin<br>
+
+<p class="fraga">Vad heter huvudstaden i Frankrike ?</p>
+<input id="mc" type="radio" name="fråga3" value="paris" >Paris<br>
+<input id="mc" type="radio" name="fråga3" value="lyon" >Lyon<br>
 
 
 <p class="fraga">Vad heter huvudstaden i England ?</p>
 <input id="mc" type="radio" name="fråga4" value="london" >London<br>
 <input id="mc" type="radio" name="fråga4" value="liverpool" >Liverpool<br>
 
-
-<p class="fraga">Vad heter huvudstaden i Ryssland ?</p>
-<input id="mc" type="radio" name="fråga5" value="moskva" >Moskva<br>
-<input id="mc" type="radio" name="fråga5" value="st petersburg" >St petersburg<br>
-
-
-<p class="fraga">Vad heter huvudstaden i Grekland ?</p>
-<input id="mc" type="radio" name="fråga6" value="athen" >Athen<br>
-<input id="mc" type="radio" name="fråga6" value="liverpool" >Budapest<br>
-
 <p class="fraga">Vad heter huvudstaden i Sverige ?</p>
-<input id="mc" type="radio" name="fråga7" value="stockholm" >Stockholm<br>
-<input id="mc" type="radio" name="fråga7" value="malmö" >Malmö<br>
+<input id="mc" type="radio" name="fråga5" value="stockholm" >Stockholm<br>
+<input id="mc" type="radio" name="fråga5" value="malmö" >Malmö<br>
 
-<p class="fraga">Vad heter huvudstaden i Finland ?</p>
-<input id="mc" type="radio" name="fråga8" value="helsingfors" >Helsingfors<br>
-<input id="mc" type="radio" name="fråga8" value="åbo" >Åbo<br>
+
+<p class="fraga">Vad heter huvudstaden i Italien ?</p>
+<input id="mc" type="radio" name="fråga6" value="rom" >Rom<br>
+<input id="mc" type="radio" name="fråga6" value="turin" >Turin<br>
+
 
 <p class="fraga">Vad heter huvudstaden i USA ?</p>
-<input id="mc" type="radio" name="fråga9" value="New york" >New york<br>
-<input id="mc" type="radio" name="fråga9" value="washington" >Washington<br>
+<input id="mc" type="radio" name="fråga7" value="washington" >Washington DC<br>
+<input id="mc" type="radio" name="fråga7" value="newyork" >New york<br>
 
-<p class="fraga">Vad heter huvudstaden i Kanada ?</p>
-<input id="mc" type="radio" name="fråga10" value="ottawa" >Ottawa<br>
-<input id="mc" type="radio" name="fråga10" value="Vancouver" >Vancouver<br>
+<p class="fraga">Vad heter huvudstaden i kanada ?</p>
+<input id="mc" type="radio" name="fråga8" value="ottawa" >Ottawa<br>
+<input id="mc" type="radio" name="fråga8" value="toronto" >Toronto<br>
+
+
+<p class="fraga">Vad heter huvudstaden i Ryssland ?</p>
+<input id="mc" type="radio" name="fråga9" value="moskva" >Moskva<br>
+<input id="mc" type="radio" name="fråga9" value="St petersburg" >St petersburgs<br>
 
 <p class="fraga">Vad heter huvudstaden i Kina ?</p>
-<input id="mc" type="radio" name="fråga11" value="chengdu" >Chengdu<br>
-<input id="mc" type="radio" name="fråga11" value="peking" >Peking<br>
+<input id="mc" type="radio" name="fråga10" value="peking" >Peking<br>
+<input id="mc" type="radio" name="fråga10" value="shanghai" >Shanghai<br>
+
+
+
+<p class="fraga">Vad heter huvudstaden i Australien ?</p>
+<input id="mc" type="radio" name="fråga11" value="canberra" >Canberra<br>
+<input id="mc" type="radio" name="fråga11" value="sydney" >Sydney<br>
+</div>
+
+
+
+
+
 
 <br>
 <input id="button" type="button" value="färdig" onclick="check();">
+
 
 </form>
 <div id="after_submit">
@@ -85,4 +98,5 @@
 
 
 </body>
+
 </html>

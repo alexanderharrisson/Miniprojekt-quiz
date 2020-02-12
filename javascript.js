@@ -11,6 +11,7 @@ var fråga8 = document.quiz.fråga8.value;
 var fråga9 = document.quiz.fråga9.value;
 var fråga10 = document.quiz.fråga10.value;
 var fråga11 = document.quiz.fråga11.value;
+
 var correct = 0;
 
 
@@ -18,53 +19,54 @@ if (fråga1 == "madrid") {
 	correct ++;
 }
 
-if (fråga2 == "paris") {
+if (fråga2 == "berlin") {
 	correct ++;
 }
 
-if (fråga3 == "berlin") {
+if (fråga3 == "paris") {
 	correct ++;
 }
 if (fråga4 == "london") {
 	correct ++;
 }
 
-if (fråga5 == "moskva") {
+if (fråga5 == "stockholm") {
 	correct ++;
 }
-if (fråga6 == "athen") {
-	correct ++;
-}
-
-if (fråga7 == "stockholm") {
+if (fråga6 == "rom") {
 	correct ++;
 }
 
-if (fråga8 == "helsingfors") {
+if (fråga7 == "washington") {
 	correct ++;
 }
 
-if (fråga9 == "washington") {
+if (fråga8 == "ottawa") {
 	correct ++;
 }
 
-if (fråga10 == "ottawa") {
+if (fråga9 == "moskva") {
 	correct ++;
 }
-if (fråga11 == "peking"){
+
+if (fråga10 == "peking") {
 	correct ++;
 }
+if (fråga11 == "canberra"){
+	correct ++;
+}
+
  
  
- 
 
- var sms = ["Perfekt!!", "Det är bra, men du kan bättre", "Sämst, hem och plugga"];
+ var sms = ["Perfekt!!", "Godkänt", "Underkänt"];
+
 
  var rackvidd;
- if (correct <= 4) {
+ if (correct <= 3) {
  	rackvidd = 2;
  }
- if (correct > 4 && correct <8)
+ if (correct > 3 && correct <8)
  {
  	rackvidd = 1;
  }
@@ -74,8 +76,10 @@ if (fråga11 == "peking"){
 
  console.log(correct);
  document.getElementById("after_submit").style.visibility = "visible";
+ document.getElementById("number_correct").innerHTML="Du fick" +' '+correct +' '+ "rätt";
  document.getElementById("sms").innerHTML = sms[rackvidd];
- document.getElementById("number_correct").innerHTML="Du fick" +' '+correct +' '+ "rätt"
+ 
+
 
  
 }
