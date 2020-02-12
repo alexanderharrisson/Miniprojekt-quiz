@@ -4,7 +4,7 @@
 }
 #quiz{
 	background: pink;
-	width: 400px;
+	width: 300px;
 	border-radius: 20px;
 }
 .fraga{
@@ -15,10 +15,11 @@
 	padding-top: 5px;
 }
 .bild{
-	height: 100px;
-	width: 90px;
+	height: 140px;
+	width: 140px;
 	padding-left: 5px;
 }
+
 #button{
 	color: white;
 	border: solid;
